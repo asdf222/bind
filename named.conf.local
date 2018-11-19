@@ -6,3 +6,11 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "martinez.local" {
+        type master;
+        file "/etc/bind/zonas/db.martinez.local";
+};
+zone "5.16.172.in-addr.arpa" {
+        type master;
+        file "/etc/bind/zonas/db.172.16.5";
+};
