@@ -4,11 +4,14 @@
 ; Instead, copy it, edit named.conf, and use that copy.
 ;
 $TTL	86400
-@	IN	SOA	localhost. root.localhost. (
-			      1		; Serial
+@	IN	SOA	martinez.local. root.martinez.local. (
+			      20181119	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			  86400 )	; Negative Cache TTL
 ;
-@	IN	NS	localhost.
+@	IN	NS	ns.martinez.local.
+10	IN	PTR	ns.martinez.local.
+10	IN	PTR	dserver00.martinez.local.
+20	IN	PTR	uclient01.martinez.local.
