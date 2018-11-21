@@ -10,7 +10,7 @@ include "/etc/bind/ddns.key";
 zone "martinez.local" {
         type master;
         file "/var/lib/bind/db.martinez.local";
-	allow-update {key CHAVE_DDNS;};
+	allow-update {key CHAVE-DDNS;};
 	
 };
 zone "5.16.172.in-addr.arpa" {
