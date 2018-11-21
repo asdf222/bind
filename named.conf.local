@@ -9,13 +9,13 @@ include "/etc/bind/ddns.key";
 
 zone "martinez.local" {
         type master;
-        file "/etc/bind/zonas/db.martinez.local";
+        file "/var/lib/bind/db.martinez.local";
 	allow-update {key CHAVE_DDNS;};
 	
 };
 zone "5.16.172.in-addr.arpa" {
         type master;
-        file "/etc/bind/zonas/db.172.16.5";
+        file "/var/lib/bind/db.172.16.5";
 	allow-update {key CHAVE-DDNS;};
 };
 
