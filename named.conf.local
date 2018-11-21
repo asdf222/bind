@@ -5,12 +5,17 @@
 // Consider adding the 1918 zones here, if they are not used in your
 // organization
 //include "/etc/bind/zones.rfc1918";
+include "/etc/bind/ddns.key";
 
 zone "martinez.local" {
         type master;
         file "/etc/bind/zonas/db.martinez.local";
+	allow-update {key ;5d6cczyDUxcws6t+v5ny3g==};
+	
 };
 zone "5.16.172.in-addr.arpa" {
         type master;
         file "/etc/bind/zonas/db.172.16.5";
+	allow-update {key ;5d6cczyDUxcws6t+v5ny3g==};
 };
+
